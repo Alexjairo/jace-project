@@ -1,0 +1,63 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                <div class="title-table">
+                    <div class="label">Código</div>
+                </div>
+            </th>
+            <th>
+                <div class="title-table">
+                    <div class="label">Tipo</div>
+                </div>
+            </th>
+            <th>
+                <div class="title-table">
+                    <div class="label">seguro</div>
+                </div>
+            </th>
+            <th>
+                <div class="title-table">
+                    <div class="label">Terminal</div>
+                </div>
+            </th>
+            <th>
+                <div class="title-table">
+                    <div class="label">Cliente</div>
+                </div>
+            </th>
+
+            <th colspan="2">
+                <div class="title-table">
+                    <div class="label op">Opciónes
+
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let envio of envio">
+            <td>{{ envio.cod_envio }}</td>
+            <td>{{ envio.tipo_envio }}</td>
+            <td>{{ envio.seguro.tipo_seguro }}</td>
+            <td>{{ envio.terminal.id_terminal }}</td>
+            <td>{{ envio.user.dni }}</td>
+            <td class="icon-cont" colspan="2">
+                <div class="icon_setting">
+                    <a href="" class="mx-1"> <i class="fas fa-edit color-warning edit"></i></a>
+                    <a href="" class="mx-1"> <i class="fas fa-eye color-info info"></i></a>
+                    <a href="" class="mx-1"> <i class="fas fa-ban color-danger danger"></i></a>
+                </div>
+            </td>
+        </tr>
+        <!-- <tr>
+            <td>ABC</td>
+            <td>jairo</td>
+            <td>Irún</td>
+            <td>Madrid</td>
+            <td>Pndiente</td>
+
+        </tr> -->
+    </tbody>
+</table>

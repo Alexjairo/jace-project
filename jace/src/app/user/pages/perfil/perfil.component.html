@@ -1,0 +1,196 @@
+<div class="row">
+    <div class="col col-12 mb-3">
+        <div class=" row-tittle">
+            <h4>Perfil</h4>
+        </div>
+    </div>
+    <div class="col col-12  mb-3">
+        <div class="col col-12 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="content-body">
+                        <div class="content-body-img col-2">
+                            <div class="img-item">
+                                <div class="img-perfil">
+                                    <img src="https://images.pexels.com/photos/2777898/pexels-photo-2777898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                    <div class="change-img">
+                                        <div class="change-img-item">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="img-item">
+                                <div class="img-perfil-info ">
+                                    <div class="from-row">
+                                        <div class="foot-img">
+                                            <p>Cargo</p>
+                                            <a href="">Cerrar Sesión</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content-body-info col-6">
+                            <form action="" class="form-general" *ngFor="let user of user">
+                                <div class="from-item-group">
+                                    <div class="from-item-group-content" id="emisor">
+                                        <div class="from-row-tittle d-flex">
+                                            <div class="from-row w-100">
+                                                <div class="icon-seting">
+                                                    <h4>Información General</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="porfile-info d-flex w-100">
+                                            <div class="porfile-info-content">
+                                                <div class="porfile-info-content-element col-6">
+
+                                                    <div class="from-row">
+                                                        <div class="from-control-label col-2">
+                                                            <label class="from-control-label" for="nombre">Nombre</label>
+                                                        </div>
+                                                        <input class="from-control-label" class="input-lable" type="text" id="nombre" name="nombre" value="{{user.nombre}}">
+                                                    </div>
+                                                    <div class="from-row">
+                                                        <div class="from-control-label col-2">
+                                                            <label class="from-control-label" for="apellido">Apellido</label>
+                                                        </div>
+                                                        <input type="text" id="apellido" name="apellido" value="{{user.apellido}}">
+                                                    </div>
+                                                    <div class="from-row">
+                                                        <div class="from-control-label col-2">
+                                                            <label class="from-control-label" for="direc"> Dirección</label>
+                                                        </div>
+                                                        <input type="text" id="direc" name="direc" value="{{user.direccion}}">
+                                                    </div>
+                                                    <div class="from-row">
+                                                        <div class="from-control-label col-2">
+                                                            <label class="from-control-label" for="dni"> DNI</label>
+                                                        </div>
+                                                        <input type="text" id="dni_p" name="dni_p" maxlength="4" value="{{user.dni}}">
+                                                    </div>
+                                                    <div class="from-row">
+                                                        <div class="from-control-label col-2">
+                                                            <label class="from-control-label" for="telf"> Teléfono</label>
+                                                        </div>
+                                                        <input type="text" id="telf" name="telf" maxlength="4" value="{{user.telefono}}">
+                                                    </div>
+
+                                                </div>
+                                                <div class="porfile-info-content-element col-6">
+                                                    <div class="porfile-info-content-element-item">
+                                                        <div class="from-row password-item">
+                                                            <div class="from-control-label col-2">
+                                                                <label class="from-control-label" for="pssword">Contraseña</label>
+                                                            </div>
+                                                            <input class="pass" type="password" id="password" name="password" value="{{user.password}}">
+                                                            <div class="view-content-icon">
+                                                                <div id="view-a" class=" view view-active"><i class="fa-solid fa-eye "></i></div>
+                                                                <div id="view-d" class=" view view-disabled"><i class="fa-solid fa-eye-slash "></i></div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="from-item-group">
+                                    <div class="from-item-group-content" id="emisor">
+                                        <div class="from-row-tittle d-flex">
+                                            <div class="from-row w-100">
+                                                <div class="icon-seting">
+                                                    <h4>Configuración General</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="porfile-info d-flex ">
+                                            <div class="porfile-info-content">
+                                                <div class="porfile-info-content-element col-12">
+                                                    <div class="from-row">
+                                                        <div class="from-control-label col-2">
+                                                            <label class="from-control-label" for="cod_emisor">Idioma Predeterminado</label>
+                                                        </div>
+                                                        <input class="input-lable col-2" type="text" id="nombre" name="cod_emisor">
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="from-item-group">
+                                    <div class="from-item-group-content" id="emisor">
+                                        <div class="from-row-tittle d-flex">
+                                            <div class="from-row w-100">
+                                                <div class="icon-seting">
+                                                    <h4>Permisos Generales</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="porfile-info d-flex w-100">
+                                            <div class="porfile-info-content">
+                                                <div class="porfile-info-content-element w-100 ">
+                                                    <div class="from-row ">
+                                                        <div class="from-control-label col-12">
+                                                            <div class="check d-flex w-100">
+                                                                <div class="check-item col-2">
+                                                                    <label class="from-control-label" for="cod_emisor"><input class="input-lable " type="checkbox" id="nombre" name="cod_emisor" >Hacer Envios</label>
+
+                                                                </div>
+                                                                <div class="check-item col-2">
+                                                                    <label class="from-control-label" for="cod_emisor"><input class="input-lable" type="checkbox" id="nombre" name="cod_emisor" >Editar Envio</label>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+                                <!-- <label for="mensaje">Mensaje</label>
+                              <textarea id="mensaje" name="mensaje" placeholder="escribe tu mensaje....." style="height:200px"></textarea>
+                                          <div class="centrar">
+                                              <input type="submit" value="Enviar">
+
+                                          </div> -->
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

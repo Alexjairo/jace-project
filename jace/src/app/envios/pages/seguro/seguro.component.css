@@ -1,0 +1,50 @@
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+}
+
+table thead th {
+    background-color: white;
+    color: var(--jace-text);
+    font-size: 12px;
+    text-align: left;
+    font-weight: 500;
+}
+
+table td {
+    border-top-width: 1px;
+    border-style: solid;
+    border-top-color: rgb(207, 207, 207);
+}
+
+table td,
+table th {
+    padding: 12px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table>.title-table>.label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.op {
+    text-align: center;
+}
+
+.icon_setings>a {
+    margin-left: 5px;
+}
+
+.desc-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

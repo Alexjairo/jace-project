@@ -1,0 +1,51 @@
+h4 {
+    font-weight: 500;
+    font-size: 1.31rem;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.card-head {
+    margin-bottom: 0;
+    background-color: rgba(43, 43, 43, 0.03);
+    border-bottom: 1px solid rgba(43, 43, 43, 0.125);
+}
+
+.card-head>label {
+    font-size: 1.08rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon_setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont-table {
+    display: block;
+    border-radius: 14px;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    background-color: white;
+    color: var(--jace-text);
+}
+
+.table-container {
+    border: 1px solid #e0e0e0;
+    position: relative;
+    overflow: auto;
+    border-radius: inherit;
+    max-height: inherit;
+    display: block;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}

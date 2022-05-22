@@ -1,0 +1,55 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                <div class="title-table">
+                    <div class="label">Mátricula</div>
+                </div>
+            </th>
+            <th>
+                <div class="title-table">
+                    <div class="label">Modelo</div>
+                </div>
+            </th>
+            <th>
+                <div class="title-table">
+                    <div class="label">Estado</div>
+                </div>
+            </th>
+            <th>
+                <div class="title-table">
+                    <div class="label">Capacidad</div>
+                </div>
+            </th>
+            <th>
+                <div class="title-table">
+                    <div class="label">Año</div>
+                </div>
+            </th>
+            <th colspan="2">
+                <div class="title-table">
+                    <div class="label op">Opciónes </div>
+                </div>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+        <tr *ngFor="let car of car">
+            <td>{{car.matricula}}</td>
+            <td>{{car.modelo}}</td>
+            <td>{{car.estado}}</td>
+            <td>{{car.capacidad}} Kg</td>
+            <td>{{car.anyo | date:'yyyy'}}</td>
+            <td class="icon-cont" colspan="2">
+                <div class="icon_setting">
+                    <a href="" class="mx-1"> <i class="fas fa-edit color-warning edit"></i></a>
+                    <a href="" class="mx-1 b" onclick="AgregarClase()"> <i class="fas fa-eye color-info info"></i></a>
+                    <a href="" class="mx-1"> <i class="fas fa-ban color-danger danger"></i></a>
+                </div>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

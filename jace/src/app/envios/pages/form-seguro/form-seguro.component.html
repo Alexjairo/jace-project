@@ -1,0 +1,57 @@
+<form class="form-general" (ngSubmit)="create()" (formGroup)="formulario">
+    <div class="from-item-group">
+
+        <div class="from-item-group-content" id="paquete_envio">
+            <div class="from-row-tittle d-flex">
+                <div class="from-row w-100">
+                    <div class="icon-seting">
+                        <h4>Datos-Seguro</h4>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="from-row">
+                <div class="from-control-label col-2">
+                    <label class="from-control-label" for="name"> Nombre</label>
+                </div>
+                <input type="text" id="name" name="name" placeholder="" formControlName="tipo_seguro">
+                <div class="invalid" *ngIf="formulario.controls['tipo_seguro'].touched && formulario.controls['tipo_seguro'].hasError('required')">El campo es obligatorio</div>
+            </div>
+            <div class="from-row">
+                <div class="from-control-label col-2">
+                    <label class="from-control-label" for="precio"> <span>*</span>Peso</label>
+                </div>
+                <input type="text" id="precio" name="orecio" placeholder="">
+            </div>
+            <div class="from-row">
+                <div class="from-control-label col-2">
+                    <label class="from-control-label" for="estd"> <span>*</span>Estado</label>
+                </div>
+                <input type="text" id="estd" name="estd" placeholder="">
+            </div>
+            <div class="from-row">
+                <div class="from-control-label col-2">
+                    <label class="from-control-label" for="desc_envio"> <span>*</span>Descripción</label>
+                </div>
+                <textarea type="text" id="envio_desc" name="desc_envio" placeholder=""></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="btn-item">
+        <div class="centrar">
+            <button> Crear </button>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- <label for="mensaje">Mensaje</label>
+  <textarea id="mensaje" name="mensaje" placeholder="escribe tu mensaje....." style="height:200px"></textarea>
+              <div class="centrar">
+                  <input type="submit" value="Enviar">
+
+              </div> -->
+</form>

@@ -1,0 +1,67 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                <div class="title-table">
+                    <div class="label">Código</div>
+                </div>
+            </th>
+            <th>
+                <div class="title-table">
+                    <div class="label">Nombre</div>
+                </div>
+            </th>
+            <th>
+                <div class="title-table">
+                    <div class="label">Descripción</div>
+                </div>
+            </th>
+            <!-- <th>
+                <div class="title-table">
+                    <div class="label">Precio</div>
+                </div>
+            </th> -->
+            <!-- <th>
+                <div class="title-table">
+                    <div class="label">Estado</div>
+                </div>
+            </th> -->
+            <th colspan="2">
+                <div class="title-table">
+                    <div class="label op">Opciónes
+                        <!-- <div class="icon_setting">
+                          <a href=""> <i class="fas fa-edit color-warning edit"></i></a>
+                          <a href=""> <i class="fas fa-eye color-info info"></i></a>
+                          <a href=""> <i class="fas fa-ban color-danger danger"></i></a>
+                      </div> -->
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let seguro of seguro">
+            <td>{{seguro.cod_seguros}}</td>
+            <td>{{seguro.tipo_seguro}}</td>
+            <td>{{seguro.descripcion}}</td>
+            <td class="icon-cont" colspan="2">
+                <div class="icon_setting">
+                    <a href="" class="mx-1"> <i class="fas fa-edit color-warning edit"></i></a>
+                    <a href="" class="mx-1"> <i class="fas fa-eye color-info info"></i></a>
+                    <a href="" class="mx-1"> <i class="fas fa-ban color-danger danger"></i></a>
+                </div>
+            </td>
+            <!-- <td>{{seguro.}}</td>
+            <td>{{seguro.}}</td> -->
+        </tr>
+
+        <!-- <tr>
+            <td class="desc " colspan="5">
+                <div class="desc-content d-flex mx-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ducimus molestias doloremque repudiandae nihil iusto eos eligendi tempora aperiam culpa, praesentium dolor, molestiae quam.</div>
+            </td>
+        </tr> -->
+
+
+    </tbody>
+</table>

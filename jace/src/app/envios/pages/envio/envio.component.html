@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col col-12 mb-3">
+        <div class=" row-tittle">
+            <h4>Envios</h4>
+        </div>
+    </div>
+    <div class="col col-6  mb-3">
+        <div class="col col-12 mb-5">
+            <div class="card h-100">
+                <div class="card-head">Envios Recientes
+                    <div class="icon_setting">
+                        <a href=""><i class="fas fa-search mx-2 search color-search"></i></a>
+                        <a href="" onclick="AgregarClase()"><i class="fas fa-plus mx-2 add color-add"></i></a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="cont-table">
+                        <div class="table-container " id="content-section">
+
+                            <app-listado></app-listado>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-12 mb-5">
+            <div class="card h-100">
+                <div class="card-head"> Seguros
+                    <div class="icon_setting">
+                        <a href=""><i class="fas fa-search mx-2 search color-search"></i></a>
+                        <a href=""><i class="fas fa-plus mx-2 seg color-seg"></i></a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="cont-table">
+                        <div class="table-container" id="content-section">
+                            <app-seguro></app-seguro>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col col-6  mb-5">
+        <div class="col col-12 mb-3">
+            <div class="card h-100">
+                <div class="card-head">Envio
+                    <div class="icon_setting">
+                        <a href=""><i class="fas fa-paper-plane color-send send"></i></a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="cont-table">
+                        <div class="table-container" id="content-section">
+                            <app-form-envio></app-form-envio>
+                            <app-form-seguro></app-form-seguro>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4></h4>
+</div>

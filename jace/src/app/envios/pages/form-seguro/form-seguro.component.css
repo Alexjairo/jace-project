@@ -1,0 +1,20 @@
+@import url(../form-envio/form-envio.component.css);
+.centrar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-item {
+    display: block;
+    padding: 20px;
+}
+
+button {
+    background-color: var(--jace-add);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
