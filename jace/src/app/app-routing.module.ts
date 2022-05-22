@@ -14,9 +14,6 @@ loadChildren: ()=> import('./transporte/transporte.module').then(m => m.Transpor
 {path:'profile',
 loadChildren: ()=> import('./user/user.module').then(m => m.UserModule)
 },
-{path:'log',
-loadChildren: ()=> import('./log/log.module').then(m => m.LogModule)
-},
 
 {
   path:'**',

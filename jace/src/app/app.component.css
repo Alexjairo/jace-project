@@ -69,7 +69,6 @@ a {
 }
 
 .menu-item {
-    /* padding-left: 10px !important; */
     white-space: nowrap;
 }
 
@@ -99,7 +98,6 @@ a {
 
 .menu-item-label-content-element {
     opacity: 0.4;
-    /* font-size: .7rem; */
 }
 
 .menu-item-label-content.element {
@@ -175,13 +173,11 @@ a {
 .label-name {
     margin-left: 7px;
     font-size: 20px;
-    /* menu espacio*/
 }
 
 span a {
     color: inherit;
     text-decoration: none;
-    /* pointer-events: none; */
 }
 
 .icon {
@@ -386,7 +382,6 @@ h6.title-b {
 
 .container {
     width: 90%;
-    /* espacio del contenido*/
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
