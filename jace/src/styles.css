@@ -215,3 +215,11 @@ td {
 .user>img {
     display: none;
 }
+
+.active {
+    color: red;
+}
+
+.dis {
+    display: none
+}

@@ -1,11 +1,11 @@
 <form action="" class="form-general">
     <div class="from-item-group">
         <div class="from-item-group-content" id="emisor">
-            <div class="from-row-tittle d-flex">
+            <div class="from-row-tittle d-flex des">
                 <div class="from-row w-100">
                     <div class="icon-seting">
                         <h4>Emisor</h4>
-                        <i class="fas fa-caret-down"></i>
+                        <i class="fas fa-caret-down down-section"></i>
                     </div>
                 </div>
             </div>
@@ -145,3 +145,23 @@
 
                 </div> -->
 </form>
+<script>
+    var acc = document.getElementsByClassName("des");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            console.log(panel + "asdkaj");
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                panel.style.display = "none";
+
+            } else {
+                panel.style.display = "block";
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
