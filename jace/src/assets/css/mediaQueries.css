@@ -240,4 +240,34 @@
     #paquete_envio .from-row {
         flex-direction: row !important;
     }
+    /**fin login */
+    /*inicio porfile */
+
+}
+@media (min-width:1080px) and (max-width:1920px) {
+   .content-body-img, .img-perfil {
+       margin-left: 40px !important;
+        /* width: 200px !important;     */
+   }
+  #idioma {
+       margin-left: 40px !important;
+       white-space: none !important;
+    /**fin login */}
+    /* table>thead>tr>th:nth-child(3), table>tbody>tr>th:nth-child(4) {
+        display: none;
+    }
+    table>thead>tr>td:nth-child(3), table>tbody>tr>td:nth-child(4) {
+        display: none;
+    }
+    inicio porfile */
+    table.list-envio{
+        table-layout: auto !important;
+    }
+    .col-2{
+        max-width: 100%!important;
+    }
+    .icon_setting{
+        display: block ruby;
+        padding-right: 10px;
+    }
 }

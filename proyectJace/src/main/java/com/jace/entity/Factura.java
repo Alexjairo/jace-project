@@ -80,6 +80,11 @@ public class Factura {
 		this.precio = precio;
 	}
 
+	/**
+	 * El método toString() devuelve la representación de cadena del objeto
+	 * 
+	 * @return Se devuelve el método toString().
+	 */
 	@Override
 	public String toString() {
 		return "Factura [num_factura=" + num_factura + ", fecha_Emision=" + fecha_Emision + ", metodo_pago="
